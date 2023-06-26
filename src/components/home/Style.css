@@ -1,0 +1,34 @@
+.home-container{
+    background: linear-gradient(#393646,#2D2727);
+    height: auto;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first-block{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+}
+
+.home-container h2,p{
+    color:#F4EEE0;
+    text-align: right;
+}
+
+.first-block p{
+    font-size: 30px;
+}
+.first-block h2{
+    font-size: 48px;
+}
+.me-image{
+    height: auto;
+    width: 31%;
+    margin: 10% 0% 10% 2%;
+    border-radius:20% ;
+    border:4px solid #4F4557;
+}
