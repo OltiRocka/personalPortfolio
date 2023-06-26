@@ -1,7 +1,7 @@
 .home-container{
     background: linear-gradient(#393646,#2D2727);
     height: auto;
-    position: fixed;
+    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
@@ -32,3 +32,16 @@
     border-radius:20% ;
     border:4px solid #4F4557;
 }
+
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .first-block, .me-image {
+    z-index: 2;
+    /* Other styles... */
+  }
