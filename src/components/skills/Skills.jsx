@@ -21,7 +21,7 @@ const Skills = () => {
   ]
   return (
     <div className="tools">
-    <h2 className="text">Skills</h2>
+    <h2 className="text">Services</h2>
     <div className="tool-container">
         {tools.slice(0,4).map((tool, index) => (
             <div key={index} className="tool">

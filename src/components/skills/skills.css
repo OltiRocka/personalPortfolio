@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 .tools {
     padding: 20px;
     position: relative;
@@ -37,7 +37,7 @@
   .tool p {
     text-align: center;
     margin-top: 10px;
-    font-family: 'Slabo 27px', serif;
+    font-family: "Space Mono", Arial, serif;
     font-size:27px;
 
 
@@ -47,7 +47,7 @@ h2.text{
     text-align: center;
     font-size: 70px;
     font-weight: bolder;
-    font-family: 'Slabo 27px', serif;
+    font-family: "Space Mono", Arial, serif;
     color: #F4EEE0;
 }
   

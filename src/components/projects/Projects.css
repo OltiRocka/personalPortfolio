@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 .projects-container{
     padding: 20px;
     position: relative;
@@ -41,4 +43,6 @@ a.project p{
     text-align: center;
     font-weight: bolder;
     font-size: 150%;
+    font-family: "Space Mono", Arial, serif;
+
 }
