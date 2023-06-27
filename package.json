@@ -10,6 +10,7 @@
     "@types/three": "^0.152.1",
     "particles.js": "^2.0.0",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
     "react-particles": "^2.10.1",
     "react-scripts": "5.0.1",
