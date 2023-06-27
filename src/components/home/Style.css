@@ -3,7 +3,7 @@
 #home-container{
     height: 100vh;
     position: relative;
-    width: 100%;
+    width: auto;
     align-items: center;
     justify-content: center;
 }
@@ -41,6 +41,6 @@
 #tsparticles{
     position:absolute;
     z-index: 1;
-    width:auto;
+    width:100%;
     height: inherit;
 }
