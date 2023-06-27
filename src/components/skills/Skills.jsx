@@ -10,8 +10,8 @@ import genAi from '../assets/skills/artificial-intelligence.png'
 import './skills.css'
 const Skills = () => {
   const tools = [
-    { img: python, name: 'Python' },
-    { img: rust, name: 'Rust' },
+    // { img: python, name: 'Python' },
+    // { img: rust, name: 'Rust' },
     { img: machLea, name: 'Machine Learning' },
     { img: webSc, name: 'WebScraping' },
       { img: visualize, name: 'Data Visualising' },
@@ -23,17 +23,21 @@ const Skills = () => {
     <div className="tools">
     <h2 className="text">Services</h2>
     <div className="tool-container">
-        {tools.slice(0,4).map((tool, index) => (
+        {tools.slice(0,3).map((tool, index) => (
             <div key={index} className="tool">
-            <img src={tool.img} alt={tool.name} />
-            <p>{tool.name}</p>
-          </div>
+              <div className="image-container">
+                <img src={tool.img} alt={tool.name} />
+              </div>
+              <p>{tool.name}</p>
+            </div>
         ))}
 </div>
       <div className="tool-container">
-        {tools.slice(-4).map((tool, index) => (
+        {tools.slice(-3).map((tool, index) => (
             <div key={index} className="tool">
-            <img src={tool.img} alt={tool.name} />
+              <div className="image-container">
+                <img src={tool.img} alt={tool.name} />
+              </div>
             <p>{tool.name}</p>
           </div>
         ))}
