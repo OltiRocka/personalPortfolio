@@ -1,0 +1,44 @@
+.projects-container{
+    padding: 20px;
+    position: relative;
+    width: auto;
+    height: 100vh;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 3%;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+a.project{
+    border-radius: 10%;
+    background-color: #403c4e;
+    width:20%;
+    height:auto;
+    overflow: hidden;
+    justify-content: center;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+a.project:hover{
+    transform: scale(1.1);
+}
+
+a.project img{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+a.project p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 150%;
+}

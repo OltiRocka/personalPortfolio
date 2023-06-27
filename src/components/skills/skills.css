@@ -4,14 +4,16 @@
     padding: 20px;
     position: relative;
     width: auto;
-    height: auto;
+    height: 100vh;
 }
-.container{
+.tool-container{
     display: flex;
     padding: 20px;
+    padding-top: 3%;
     position: relative;
     width: auto;
     height: auto;
+    justify-content: center;
 }
 
   .tool {
@@ -43,7 +45,8 @@
 
 h2.text{
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: bolder;
     font-family: 'Slabo 27px', serif;
     color: #F4EEE0;
 }
