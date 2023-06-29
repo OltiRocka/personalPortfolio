@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@react-three/fiber": "^8.13.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -15,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-particles": "^2.10.1",
     "react-scripts": "^5.0.1",
+    "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.153.0",
     "tsparticles": "^2.10.1",
     "tsparticles-engine": "^2.10.1",

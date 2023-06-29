@@ -1,47 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 
-#home-container{
-    height: 100vh;
-    position: relative;
+#home-container {
+  height: 100vh;
+  position: relative;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+.first-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home-container h2,
+p {
+  color: #f4eee0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Space Mono", Arial, serif;
+  text-align: right;
+}
+
+.first-block p {
+  font-size: 40px;
+}
+.first-block h2 {
+  font-size: 72px;
+}
+.me-image {
+  height: auto;
+  width: 30%;
+  margin: 10% 0% 9% 4%;
+  border-radius: 10%;
+  border: 4px solid #4f4557;
+}
+
+.first-block,
+.me-image {
+  z-index: 2;
+}
+#tsparticles {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: inherit;
+}
+
+.socials{
     width: auto;
-    align-items: center;
-    justify-content: center;
-}
-.first-block{
+    height:50px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+
+}
+.socials a{
+    height:50px;
+    width: auto;
+    padding: 0 20px;
 }
 
-#home-container h2,p{
-    color:#F4EEE0;
-    display: flex;
-    flex-direction: column;
-    font-family: "Space Mono", Arial, serif;
-    text-align: right;
-}
-
-.first-block p{
-    font-size: 40px;
-}
-.first-block h2{
-    font-size: 72px;
-}
-.me-image{
-    height: auto;
-    width: 30%;
-    margin: 10% 0% 9% 4%;
-    border-radius:10% ;
-    border:4px solid #4F4557;
-}
-
-  .first-block, .me-image {
-    z-index: 2;
-  }
-#tsparticles{
-    position:absolute;
-    z-index: 1;
-    width:100%;
+.socials img{
     height: inherit;
+    filter: invert(93%) sepia(14%) saturate(403%) hue-rotate(325deg) brightness(105%) contrast(91%);
 }
