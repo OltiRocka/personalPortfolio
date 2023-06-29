@@ -18,6 +18,7 @@
 p {
   color: #f4eee0;
   display: flex;
+  margin-top: 0;
   flex-direction: column;
   font-family: "Space Mono", Arial, serif;
   text-align: right;
@@ -48,21 +49,21 @@ p {
   height: inherit;
 }
 
-.socials{
-    width: auto;
-    height:50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+.socials {
+  width: auto;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.socials a{
-    height:50px;
-    width: auto;
-    padding: 0 20px;
+.socials a {
+  height: 50px;
+  width: auto;
+  padding: 40px 20px;
 }
 
-.socials img{
-    height: inherit;
-    filter: invert(93%) sepia(14%) saturate(403%) hue-rotate(325deg) brightness(105%) contrast(91%);
+.socials img {
+  height: inherit;
+  filter: invert(93%) sepia(14%) saturate(403%) hue-rotate(325deg)
+    brightness(105%) contrast(91%);
 }
