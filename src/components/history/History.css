@@ -4,6 +4,7 @@
 .history {
     position: relative;
     width: auto;
+    height: auto;
     margin: 0 auto;
     min-height: 70vh;
     

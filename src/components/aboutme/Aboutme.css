@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+.about-me-container {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 5%;
+}
+
+.about-me {
+  width: 40%;
+  padding-right: 3%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Space Mono", Arial, serif;
+
+  color: #f4eee0;
+}
+
+.about-me h2 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact {
+  margin-top: 4%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  border: 4px solid #f4eee0;
+  color: #f4eee0;
+  font-family: "Space Mono", Arial, serif;
+  font-weight: bolder;
+  height: 5%;
+  width: 25%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact:hover {
+  background-color: #f4eee0;
+  color: #2d2c38;
+}
+
+.py-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 3%;
+  width: auto;
+}
+
+.code-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4% 4% 2.5% 2.5%;
+  background-color: RGB(20, 24, 32);
+}
+.py-code {
+  width: 95%;
+  text-align: left;
+  border-radius: 0 0 2.5% 2.5%;
+}
+.text-container {
+  margin-bottom: -17px;
+  width: 90%;
+  margin-top: 2.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+}
+
+.text-container img {
+  width: 100%;
+  height: auto;
+  align-self: auto;
+}
+.text-container a {
+  width: 3%;
+}
+
+button.load-button {
+  color: #fff;
+  background-color: #4caf50; /* a green similar to the run button on an IDE */
+  padding: 0;
+  border: 0px;
+  font-size: 16px;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  outline: 0;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40%; /* make the button round */
+  position: relative; /* added to center the svg and text */
+  margin-top: -10px;
+  margin-right: -10px;
+}
+
+button.load-button span,
+button.load-button svg {
+  position: absolute; /* center the svg and text */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button.load-button svg {
+  width: 30px; /* adjust svg size to fit the button */
+  height: 30px;
+}
+
+button.load-button span {
+  transition: all 1s;
+  opacity: 1;
+}
+
+button.load-button svg {
+  display: none;
+  margin: 0 auto;
+  transition: all 1s;
+}
+
+button.load-button svg path,
+button.load-button svg rect {
+  fill: #fff;
+}
+
+button.loading-start span {
+  display: none;
+  opacity: 0;
+}
+
+button.loading-start svg {
+  display: block;
+  opacity: 1;
+}

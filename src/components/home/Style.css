@@ -6,6 +6,8 @@
   position: relative;
   width: auto;
   align-items: center;
+  font-family: "Space Mono", Arial, serif;
+
   justify-content: center;
 }
 .first-block {
@@ -30,6 +32,8 @@ p {
 .first-block h2 {
   font-size: 72px;
 }
+
+
 .me-image {
   height: auto;
   width: 30%;
