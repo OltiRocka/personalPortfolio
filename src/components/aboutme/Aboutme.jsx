@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import "./Aboutme.css";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-const codeString = `class Resume:
+const code = `class Resume:
     def __init__(self, name, email):
         self.name = name
         self.email = email
@@ -39,6 +39,25 @@ my_resume.save_as_pdf()
 
 function Aboutme() {
   const [loading, setLoading] = useState(false);
+  const [displayedCode, setDisplayedCode] = useState("");
+  let currentCode = "";
+
+  useEffect(() => {
+    let index = 0;
+    const intervalId = setInterval(() => {
+      if (index < code.length) {
+        currentCode += code[index];
+        setDisplayedCode(currentCode);
+        index++;
+      } else {
+        clearInterval(intervalId);
+      }
+    }, 4); // change 10 for speed
+
+    // Cleanup function to clear interval if component unmounts while typing animation is happening
+    return () => clearInterval(intervalId);
+  }, []); // Empty dependency array so effect only runs on mount
+
 
   const handleClick = () => {
     setLoading(true);
@@ -101,7 +120,7 @@ function Aboutme() {
               padding: "15px",
             }}
           >
-            {codeString}
+            {displayedCode}
           </SyntaxHighlighter>
         </div>
       </div>

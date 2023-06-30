@@ -1,4 +1,4 @@
-import React, {useState,useEffect}from "react";
+import React, {useState, useEffect}from "react";
 import "./Style.css";
 import me from "../assets/me.jpeg";
 import { useCallback } from "react";
@@ -14,14 +14,16 @@ const Home = () => {
   }, []);
 
   const [text, setText] = useState("");
-  const message = "Hii! I'm Olti"; // type your text here
+  const message = "Hi! I'm Olti"; // type your text here
+  let currentText = "";
 
   useEffect(() => {
     let index = 0;
     const timer = setInterval(() => {
-      setText((prevText) => prevText + message[index]);
+      currentText += message[index];
+      setText(currentText);
       index++;
-      if (index === (message.length-1)) {
+      if (index === message.length) {
         clearInterval(timer);
       }
     }, 70); // change 70 for speed
