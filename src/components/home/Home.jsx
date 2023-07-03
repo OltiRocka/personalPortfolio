@@ -60,7 +60,7 @@ const Home = () => {
         </div>
         <img src={me} className="me-image" />
       </div>
-      <GithubCorner href="https://github.com/OltiRocka/personalPortfolio" target="_blank"/>
+      <GithubCorner className="git-cat" href="https://github.com/OltiRocka/personalPortfolio" target="_blank"/>
     </Container>
   );
 };

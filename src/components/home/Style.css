@@ -63,7 +63,9 @@ p {
   filter: invert(93%) sepia(14%) saturate(403%) hue-rotate(325deg)
     brightness(105%) contrast(91%);
 }
-
+.git-cat{
+  position: absolute;
+}
 @media (max-width:801px) {
   #home-container {
     height: 100vh;
