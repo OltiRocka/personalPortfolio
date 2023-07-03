@@ -50,7 +50,7 @@ const History = () => {
           <div 
             key={index} 
             className={`history-event ${index % 2 === 0 ? "left" : "right"}`} 
-            style={{marginBottom: hoveredIndex === index ? `calc( 4% + ${descriptionRefs.current[index].clientHeight}px)` : '5%'}}
+            style={{marginBottom: hoveredIndex === index ? `calc( 5% + ${descriptionRefs.current[index].clientHeight}px)` : '5%'}}
             onMouseOver={() => handleMouseOver(index)}
             onMouseOut={handleMouseOut}
           >

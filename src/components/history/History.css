@@ -113,3 +113,46 @@
     margin-bottom: 100px;
   }
   
+  @media (max-width: 801px) {
+    .history {
+      max-width: 100%;
+      padding: 0 20px; /* Add some padding to the sides */
+      
+    }
+    
+    .history-header {
+      max-width: 100%;
+      font-size: 36px; /* Decrease the font size for better fit */
+    }
+  
+    .history-content {
+      max-width: 100%; /* Occupy full width */
+      position: relative; /* Remove absolute positioning */
+      text-align: center; /* Center align content */
+      margin-top: 30px; /* Add some top margin */
+      z-index: 3; /* Increase the z-index to bring the text on top */
+    }
+
+    .history-event {
+      margin-bottom: 0%; /* Adjust the percentage to reduce the space on phone screens */
+    }
+    .history-event:nth-child(odd) .history-content,
+    .history-event:nth-child(even) .history-content {
+      left: initial;
+      right: initial;
+      text-align: center; /* Center align content */
+    }
+
+    .timeline::before{
+      left: 5%;
+    }
+    .history-icon{
+      left:0;
+
+    }
+    .history-content{
+      margin-top: 0;
+      margin-left: 4%;
+    }
+  }
+  

@@ -17,7 +17,6 @@ const code = `class Resume:
         self.experience.append(job)
 
     def save_as_pdf(self):
-        # Assume some library or method to convert text data into a PDF
         pdf_data = self.name + "\\n" + self.email
         for skill in self.skills:
             pdf_data += "\\n" + skill
@@ -114,6 +113,8 @@ function Aboutme() {
           <SyntaxHighlighter
             className="py-code"
             language="python"
+            wrapLines={true}
+            lineProps={{style: {paddingBottom: 8}}}
             showLineNumbers={true}
             style={atomOneDark}
             customStyle={{

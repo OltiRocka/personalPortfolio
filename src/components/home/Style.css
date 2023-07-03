@@ -7,7 +7,6 @@
   width: auto;
   align-items: center;
   font-family: "Space Mono", Arial, serif;
-
   justify-content: center;
 }
 .first-block {
@@ -33,7 +32,6 @@ p {
   font-size: 72px;
 }
 
-
 .me-image {
   height: auto;
   width: 30%;
@@ -45,12 +43,6 @@ p {
 .first-block,
 .me-image {
   z-index: 2;
-}
-#tsparticles {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: inherit;
 }
 
 .socials {
@@ -70,4 +62,49 @@ p {
   height: inherit;
   filter: invert(93%) sepia(14%) saturate(403%) hue-rotate(325deg)
     brightness(105%) contrast(91%);
+}
+
+@media (max-width:801px) {
+  #home-container {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    align-items: center;
+    font-family: "Space Mono", Arial, serif;
+    justify-content: center;
+  }
+  .first-block {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #home-container h2,
+  p {
+    color: #f4eee0;
+    font-family: "Space Mono", Arial, serif;
+    text-align: center;
+  }
+  .text-innpmtroduction {
+    margin-top: 15%;
+  }
+  .first-block p {
+    font-size: 24px;
+    word-wrap: break-word;
+    text-align: center;
+  }
+  .first-block h2 {
+    font-size: 48px;
+    word-wrap: break-word;
+    text-align: center;
+  }
+  
+  .me-image {
+    width: 80%;
+    margin-top: 20%;
+  }
+
 }
