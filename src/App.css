@@ -1,40 +1,95 @@
-.App {
-  text-align: center;
-  top: 0;
-
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.EmailForm {
+  border: 2px solid #abb2bf;
+  padding: 20px;
+  font-family: "Fira Code", monospace;
+  width: 45%;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .EmailForm {
+    width: 80%;
+  }
+}
+
+.EmailForm label {
+  color: #abb2bf;
+  font-family: "Fira Code", monospace;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#form-textarea-control-opinion {
+  height: 250px;
+}
+
+.EmailForm input,
+.EmailForm textarea {
+  width: 90%;
+  padding: 10px;
+  font-family: "Fira Code", monospace;
+  border: 1px solid #abb2bf;
+  margin-bottom: 15px;
+  background-color: transparent;
+  color: #abb2bf;
+  font-size: 16px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #282c33 inset !important;
+  -webkit-text-fill-color: #abb2bf !important;
+}
+
+.EmailForm input:focus,
+.EmailForm textarea:focus {
+  border-color: #c778dd;
+  outline: none;
+}
+
+.button-container {
+  width: 90%;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 12px;
+  justify-content: flex-start;
+}
+
+.EmailForm button {
+  background-color: transparent;
   color: white;
+  border: 1px solid #c778dd;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.EmailForm button:hover {
+  background-color: #bb6bd6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.EmailForm .ui.icon.input > i.icon {
+  color: #abb2bf;
+}
+
+.EmailForm .ui.icon.input > i.icon:hover {
+  color: #c778dd;
+}
+
+.custom-popup {
+  background-color: #282c33;
+}
+
+.custom-title {
+  color: White;
+}
+
+.custom-content {
+  color: #abb2bf;
 }
