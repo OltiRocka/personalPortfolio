@@ -1,7 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
 import ProjectFormat from "../components/ProjectContainer";
-import InstagramBot from "../files/InstaBot.png";
 import HuggingFace from "../files/Hugging Face.png";
 import Llama2 from "../files/Llama2.png";
 import { Link } from "react-router-dom";
@@ -79,7 +78,7 @@ export default function Projects() {
             onClick={scrollTop}
             style={{ textDecoration: "none" }}
           >
-            <a
+            <p
               style={{
                 alignSelf: "left",
                 color: "white",
@@ -87,7 +86,7 @@ export default function Projects() {
               }}
             >
               View all <span style={{ fontSize: "24px" }}>➔</span>
-            </a>
+            </p>
           </Link>
         </Handler>
         <ProjectsContainer>

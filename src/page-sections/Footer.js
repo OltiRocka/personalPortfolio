@@ -99,13 +99,25 @@ export default function Footer() {
             Media
           </p>
           <Socials>
-            <a href="https://github.com/OltiRocka/" target="_blank">
+            <a
+              href="https://github.com/OltiRocka/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <GitHub />
             </a>
-            <a href="https://www.linkedin.com/in/oltir" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/oltir"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <LinkedIn />
             </a>
-            <a href="https://www.instagram.com/rocka.dev/" target="_blank">
+            <a
+              href="https://www.instagram.com/rocka.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Instagram />
             </a>
           </Socials>
