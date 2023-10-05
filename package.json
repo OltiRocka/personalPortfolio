@@ -15,8 +15,7 @@
     "semantic-ui-react": "^2.1.4",
     "styled-components": "^6.0.7",
     "sweetalert2": "^11.7.23",
-    "web-vitals": "^2.1.4",
-    "yarn": "^1.22.19"
+    "web-vitals": "^2.1.4"
   },
   "resolutions": {
     "styled-components": "^5"
