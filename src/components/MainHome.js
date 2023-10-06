@@ -183,10 +183,21 @@ function MainHome() {
         <ImageContainer>
           <Image>
             <BackgroundLogo
-              style={{
-                position: "absolute",
-                zIndex: "0",
-              }}
+              style={
+                windowWidth >= 767
+                  ? {
+                      position: "absolute",
+                      zIndex: "0",
+                      marginLeft: "3%",
+                      marginTop: "3%",
+                    }
+                  : {
+                      position: "absolute",
+                      zIndex: "0",
+                      marginLeft: "10%",
+                      marginTop: "20%",
+                    }
+              }
             />
             <img
               src={meImage}
@@ -214,14 +225,14 @@ function MainHome() {
                   ? {
                       position: "absolute",
                       zIndex: "3",
-                      marginLeft: "5%",
+                      marginLeft: "18%",
                       marginTop: "-7%",
                     }
                   : {
                       position: "absolute",
                       zIndex: "3",
-                      marginLeft: "20%",
-                      marginTop: "-50%",
+                      marginLeft: "70%",
+                      marginTop: "-30%",
                     }
               }
             />

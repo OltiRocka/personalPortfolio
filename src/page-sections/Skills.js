@@ -79,13 +79,6 @@ const Line = styled.div`
   }
 `;
 
-const Dots1 = styled(Dots)`
-  position: absolute;
-  margin-top: 10%;
-  margin-left: -30%;
-  width: 63px;
-  height: 63px;
-`;
 const SkillBoxLanguages = styled(SkillBox)`
   grid-area: lang;
 `;
@@ -110,15 +103,22 @@ const SkillBoxTools = styled(SkillBox)`
 const SkillBoxFrameworks = styled(SkillBox)`
   grid-area: frameworks;
 `;
+const Dots1 = styled(Dots)`
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 63px;
+  height: 63px;
+`;
 const Dots2 = styled(Dots)`
   position: absolute;
-  margin-top: 40%;
-  margin-left: 0%;
+  margin-top: 50%;
+  margin-left: 20%;
   width: 63px;
   height: 63px;
   @media (max-width: 768px) {
     margin-top: 40%;
-    margin-left: -5%;
+    margin-left: 15%;
   }
 `;
 
@@ -136,20 +136,17 @@ const Square1 = styled.div`
 
 const Square2 = styled.div`
   position: absolute;
-  margin-top: 50%;
-  margin-left: 70%;
+  margin-top: 30%;
+  margin-left: 40%;
   width: 52px;
   height: 52px;
   border: 1px solid #abb2bf;
-  @media (max-width: 768px) {
-    margin-left: 80%;
-  }
 `;
 
 const Logo1 = styled(Logo)`
   position: absolute;
-  margin-top: 45%;
-  margin-left: -40%;
+  margin-top: 40%;
+  margin-left: 60%;
   width: 113px;
   height: 113px;
 `;

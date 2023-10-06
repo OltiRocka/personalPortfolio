@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { ReactComponent as RokaLogo } from "../files/Logo.svg";
 import { Link } from "react-router-dom";
@@ -71,8 +71,7 @@ const LogoContainer = styled(Link)`
   align-items: center;
   text-decoration: none;
   justify-content: flex-start;
-
-  opacity: 1;
+  opacity: ${(props) => (props.isAtTop ? 1 : 0)};
   transition: opacity 0.5s ease-in-out;
 `;
 const StyledH2 = ({ children, href, onClick }) => {
@@ -85,10 +84,24 @@ const StyledH2 = ({ children, href, onClick }) => {
 };
 
 function Navigation({ links }) {
+  const [isAtTop, setIsAtTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const atTop = window.scrollY <= 0;
+      setIsAtTop(atTop);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <Container>
       <NavBar>
-        <LogoContainer to="/">
+        <LogoContainer to="/" isAtTop={isAtTop}>
           <RokaLogo
             style={{
               marginRight: "8px",
