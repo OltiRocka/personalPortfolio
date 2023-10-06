@@ -261,7 +261,7 @@ function MainHome() {
                 color: "white",
               }}
             >
-              Portfolio
+              Face Matching Model
             </span>
           </CurrentlyWorking>
         </ImageContainer>
